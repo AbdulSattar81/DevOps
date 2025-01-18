@@ -1,4 +1,8 @@
-https://www.amplework.com/wp-content/uploads/2022/07/DevOps-Tools.png
+<p align="center">
+ <img src="<p align="center">
+ <img src="https://user-images.githubusercontent.com/45159366/124398899-0a0d9200-dccd-11eb-8441-9236b838f981.png">
+  <br />
+</p>
 
 ---------------------------------------------------------------------------------
 
