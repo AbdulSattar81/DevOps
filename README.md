@@ -35,4 +35,7 @@ There are three important things,
 ![Kubernetes Architecture Diagram](https://miro.medium.com/v2/resize:fit:1400/1*0Sudxeu5mQyN3ahi1FV49A.png)
 
 -------------------------------------------------------------------------------------------------------------------------
+**AWS VPC Architecture**
+
+!<img width="813" alt="Screenshot 2025-01-18 at 5 56 44 AM" src="https://github.com/user-attachments/assets/98337840-5d42-4a6f-a46e-9cd179e434c8" />
 
