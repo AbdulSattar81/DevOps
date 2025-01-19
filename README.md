@@ -39,3 +39,11 @@ There are three important things,
 
 !<img width="813" alt="Screenshot 2025-01-18 at 5 56 44 AM" src="https://github.com/user-attachments/assets/98337840-5d42-4a6f-a46e-9cd179e434c8" />
 
+-------------------------------------------------------------------------------------------------------------------------
+
+**Ansible**
+
+<p align="center">
+ <img src="https://www.endpointdev.com/blog/2022/08/ansible-tutorial-with-aws-ec2/ansible01.webp">
+  <br />
+</p>
