@@ -12,10 +12,10 @@
 ---------------------------------------------------------------------------------
 
 
-
-**Architectures of Tools used for DevOps**
+Architectures of Tools used for DevOps
 
 ### Docker Architecture
+
 
 ![image](https://user-images.githubusercontent.com/43399466/217507877-212d3a60-143a-4a1d-ab79-4bb615cb4622.png)
 
