@@ -1,1 +1,17 @@
-.
+Create an EC2 instance
+allocate 20GB
+connect with SSH on macbook Terminal
+Setup & Installation
+
+pre-requisites: 
+1.Docker(it needs permission to run/access) which I have already done
+2.Kind(kubernetes in Docker)
+3.Kubectl
+4.Helm (you can install ArgoCD using Helm or cube kubectl)
+⭐️Helm is used in Production(recommended)
+
+create KIND-Config file(vim KIND-Config.yaml)- this is a manifest file
+(This create's a kind cluster)
+
+Installation of Argo city
+
