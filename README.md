@@ -52,3 +52,14 @@ There are three important things,
  <img src="https://www.endpointdev.com/blog/2022/08/ansible-tutorial-with-aws-ec2/ansible01.webp">
   <br />
 </p>
+
+-------------------------------------------------------------------------------------------------------------------------
+
+**ArgoCD**
+
+<p align="center">
+ <img width="743" height="708" alt="image" src="https://github.com/user-attachments/assets/f4e4614b-43d4-4f5d-a49c-e8858557f2f0" />
+  <br />
+</p>
+
+
