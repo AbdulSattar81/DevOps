@@ -13,5 +13,5 @@ pre-requisites:
 create KIND-Config file(vim KIND-Config.yaml)- this is a manifest file
 (This create's a kind cluster)
 
-Installation of Argo city
+Installation of ArgoCD
 
