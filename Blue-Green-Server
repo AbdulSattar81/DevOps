@@ -1,0 +1,11 @@
+### After terraform apply --auto-approve
+### install kubectl 
+sudo snap install kubectl --classic
+kubectl get nodes (it will fail )
+## to fix we have run a command 
+aws eks --region us-east-2 update-kubeconfig --name devopsshack-cluster
+kubectl get nodes (now it will work)
+###now RBAC 
+## create service account named as JENKINS ( the permission should be availabe to only service accound (jenkins) specifically)
+vim sa.yml
+kyb
