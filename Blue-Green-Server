@@ -8,4 +8,13 @@ kubectl get nodes (now it will work)
 ###now RBAC 
 ## create service account named as JENKINS ( the permission should be availabe to only service accound (jenkins) specifically)
 vim sa.yml
-kyb
+
+
+
+##jenkins running slow (steps to fix the issue)
+
+cd var/lib/jenkins
+ls -ltr
+vim jenkins.model.jenkinsLocationConfiguration.xml
+
+##replace the IP address with the current(new) IP address once you start the Jenkins Server. (do this every time you stop/start the instance.
