@@ -1,0 +1,46 @@
+#CRUD:
+  - CREATE
+  - READ
+  - UPDATE
+  - DELETE(DROP)
+
+INSERT Data
+
+#Datatypes & Constraints
+Datatypes
+Constraints
+
+#Data Refining:
+  - WHERE
+  - ORDER BY
+  - DISTINCT
+  - LIMIT
+  - LIKE
+
+#Operators:
+ - Relational 
+ - Logical
+
+#Aggregate Functions:
+ - COUNT 
+ - MIN 
+ - MAX
+ - AVG
+
+GROUP BY -
+
+#String Functions:
+ - CONCAT
+ - CONCAT_WS
+ - REPLACE
+ - SUBSTR
+ - LEFT , RIGHT
+ - UPPER , LOWER
+ - TRIM, LTRIM, RTRIM
+ - POSITON
+ - STRING_AGG
+
+#ALTER QUERY (Modify Table)
+
+#CHECK Constraint
+
