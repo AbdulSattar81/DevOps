@@ -19,4 +19,4 @@ ElasticSearch API:	9200 \
 Jenkins: 8080 \
 SMTP:	25 \
 SonarQube:	9000 \
-Nexus:	8081 \
+Nexus:	8081 
