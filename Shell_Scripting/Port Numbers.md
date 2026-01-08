@@ -1,8 +1,8 @@
 Service / Protocol	Port(s):
 
-HTTP:	80
-HTTPS:	443
-SSH:	22
+HTTP:	80\
+HTTPS:	443\
+SSH:	22\
 FTP:	21
 MySQL:	53
 PostgreSQL:	5432
