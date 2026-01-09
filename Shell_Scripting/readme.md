@@ -22,10 +22,11 @@ df -h: Human readable
 set -x: 
 (-x stands for debug mode)
 
-ps -ef (-ef give all the processess running)
-
-
-
+pipe( | ) is used whenever we want to provide the output of the first command to the input of the second command.
+1. ps -ef (-ef give all the processess running)
+2. ps -ef | grep amazon (ex: in place of amazon you can type anything that you want to filter by.)
+3. ps -ef | grep amazon | awk -F" " '{print $2}'     (ex: here "$2" means second column from the data)
+4. 
 
 
 Commands
