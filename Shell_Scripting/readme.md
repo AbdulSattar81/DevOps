@@ -43,6 +43,10 @@ For example: curl www.url.com | grep ERROR
 #wget (it is used to download the data from the Internet)
 for example: wget www.url.com (this literally downloads the data and saves in your current directory in your device or virtual machine)
 
+#Using Touch command create multiple files at once
+for example: touch file{1..10}.txt
+
+#
 
 
 Commands
