@@ -31,7 +31,14 @@ set -o pipefail # this command is very important without this, the set -e comman
 1. ps -ef (-ef give all the processess running)
 2. ps -ef | grep amazon (ex: in place of amazon you can type anything that you want to filter by.)
 3. ps -ef | grep amazon | awk -F" " '{print $2}'     (ex: here "$2" means second column from the data)
-4. 
+
+#curl (curl command is used to transfer or retrieve data from the Internet)
+for example: curl www.gitHub.com/abdulsattar81/DevOps/ 
+
+curl command is also useful for troubleshooting the logfile 
+For example: curl www.url.com | grep ERROR
+
+
 
 
 Commands
