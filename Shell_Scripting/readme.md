@@ -23,7 +23,7 @@ set -x #it will print the input command  & output result on the terminal itself.
 (-x stands for debug mode)
 
 pipe( | ) is used whenever we want to provide the output of the first command to the input of the second command.
-#whenever you write the script, make sure the script exits whenever there is an error for that we need to set a parameter/command
+#if you are using pipe (|) in the script, make sure the script exits whenever there is an error, for that we need to use set parameter/command.
 For example: 
 set -e #exits when there is an error
 set -o pipefail # this command is very important without this, the set -e command still print the output with the error message.
