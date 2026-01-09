@@ -32,12 +32,14 @@ set -o pipefail # this command is very important without this, the set -e comman
 2. ps -ef | grep amazon (ex: in place of amazon you can type anything that you want to filter by.)
 3. ps -ef | grep amazon | awk -F" " '{print $2}'     (ex: here "$2" means second column from the data)
 
-#curl (curl command is used to transfer or retrieve data from the Internet)
+#curl (curl command is used to transfer or retrieve data from the Internet. it does not download any file. It just displayed whatever is there in the URL)
 for example: curl www.gitHub.com/abdulsattar81/DevOps/ 
 
 curl command is also useful for troubleshooting the logfile 
 For example: curl www.url.com | grep ERROR
 
+#wget (it is used to download the data from the Internet)
+for example: wget www.url.com (this literally downloads the data and saves in your current directory in your device or virtual machine)
 
 
 
