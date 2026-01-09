@@ -18,11 +18,16 @@ top - It will list the processesand many other details of the machine.
 df - lists available disk space
 df -h: Human readable
 
-#we should give Seth parameter at the beginning of the shell script after shebang(#!/bin/bash)
-set -x: 
+#we should give Set parameter at the beginning of the shell script after shebang(#!/bin/bash)
+set -x #it will print the input command  & output result on the terminal itself. 
 (-x stands for debug mode)
 
 pipe( | ) is used whenever we want to provide the output of the first command to the input of the second command.
+#whenever you write the script, make sure the script exits whenever there is an error for that we need to set a parameter/command
+For example: 
+set -e #exits when there is an error
+set -o pipefail # this command is very important without this, the set -e command still print the output with the error message.
+
 1. ps -ef (-ef give all the processess running)
 2. ps -ef | grep amazon (ex: in place of amazon you can type anything that you want to filter by.)
 3. ps -ef | grep amazon | awk -F" " '{print $2}'     (ex: here "$2" means second column from the data)
