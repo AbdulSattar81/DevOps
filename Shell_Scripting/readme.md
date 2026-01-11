@@ -8,8 +8,9 @@ version: v0.1
 To execute shell commands in shell_script: Use $(command)
 for example: echo " This is my present working directory: **$(pwd)** "
 
-#two shift the cursor to the very right of the line we use
-
+# To jump very right of the line in VIM Editor:
+1. $ #dollar is used to jump to right
+2. 0 # zero is used to jump back to the start of the line
 
 #Shell_scripting always starts with !#/bin/bash and the file extension will be .sh
 #multi line comment
@@ -62,6 +63,7 @@ Command two
 # transfer the data from one file to another using cat command
 1. cat < file1 >file2 #space between the commands doesn't matter.
 2. cat file1 | tee file2
+
 # Redirect the Error to null device
 For example: cat gxdtgsyf #by doing this it will show us error, no to redirect the error message to the new device we can simply give 
 cat gxdtgsyf &> /dev/null #this command will redirect the error output to the normal device, which is kind of black hole. 
