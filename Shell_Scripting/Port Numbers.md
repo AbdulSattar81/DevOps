@@ -1,4 +1,4 @@
-Service / Protocol	Port(s):
+# Service / Protocol	Port(s):
 
 HTTP:	80 \
 HTTPS:	443 \
