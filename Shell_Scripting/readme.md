@@ -60,7 +60,7 @@ Command two
 cat < file1 >file2
 
 # Redirect the Error to null device
-For example: cat gxdtgsyf #by doing this it will show us error, no to redirect the error message to the new device we can simply give
-cat gxdtgsyf &> /dev/null #this command will redirect the error output to the normal device, which is kind of black hole.
+For example: cat gxdtgsyf #by doing this it will show us error, no to redirect the error message to the new device we can simply give \
+cat gxdtgsyf &> /dev/null #this command will redirect the error output to the normal device, which is kind of black hole. \
 
 Commands
