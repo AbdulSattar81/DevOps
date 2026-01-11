@@ -9,8 +9,8 @@ To execute shell commands in shell_script: Use $(command)
 for example: echo " This is my present working directory: **$(pwd)** "
 
 # To jump very right of the line in VIM Editor:
-1. $ #dollar is used to jump to right
-2. 0 # zero is used to jump back to the start of the line
+1. $ (dollar is used to jump to right)
+2. 0 (zero is used to jump back to the start of the line)
 
 #To undo in VIM editor
 1. u (by pressing u it will undo)
@@ -21,22 +21,22 @@ for example: echo " This is my present working directory: **$(pwd)** "
 << Commands
 Shell_Commands I keep forgetting:
 
-free - lists the memory of the machine.
-nproc - it will list the number of CPU's running on VM.
-top - It will list the processesand many other details of the machine.
+free (lists the memory of the machine)
+nproc (it will list the number of CPU's running on VM)
+top (It will list the processesand many other details of the machine)
 
-df - lists available disk space
-df -h: Human readable
+df (lists available disk space
+df -h (-h stands for Human readable
 
 #we should give Set parameter at the beginning of the shell script after shebang(#!/bin/bash)
-set -x #it will print the input command  & output result on the terminal itself. 
+set -x (it will print the input command  & output result on the terminal itself)
 (-x stands for debug mode)
 
 pipe( | ) is used whenever we want to provide the output of the first command to the input of the second command.
 #if you are using pipe (|) in the script, make sure the script exits whenever there is an error, for that we need to use set parameter/command.
 For example: 
-set -e #exits when there is an error
-set -o pipefail # this command is very important without this, the set -e command still print the output with the error message.
+set -e (exits when there is an error)
+set -o pipefail (this command is very important without this, the set -e command still print the output with the error message)
 
 1. ps -ef (-ef give all the processess running)
 2. ps -ef | grep amazon (ex: in place of amazon you can type anything that you want to filter by.)
