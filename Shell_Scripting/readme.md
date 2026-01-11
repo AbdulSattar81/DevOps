@@ -12,6 +12,9 @@ for example: echo " This is my present working directory: **$(pwd)** "
 1. $ #dollar is used to jump to right
 2. 0 # zero is used to jump back to the start of the line
 
+#To undo in VIM editor
+1. u (by pressing u it will undo)
+
 #Shell_scripting always starts with !#/bin/bash and the file extension will be .sh
 #multi line comment
 
