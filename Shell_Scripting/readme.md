@@ -10,7 +10,7 @@ for example: echo " This is my present working directory: **$(pwd)** "
 
 #Shell_scripting always starts with !#/bin/bash and the file extension will be .sh
 #multi line comment
-<<< Commands
+<< Commands
 Shell_Commands I keep forgetting:
 
 free - lists the memory of the machine.
@@ -45,6 +45,15 @@ for example: wget www.url.com (this literally downloads the data and saves in yo
 
 #Using Touch command create multiple files at once
 for example: touch file{1..10}.txt
+
+# multiple commands in a single line in one go
+1. separated by semicolon (;).
+For example: echo "hello world"; echo"good morning"; echo" goodbye"
+
+2. Curly braces {
+Command one
+Command two
+}
 
 #
 
