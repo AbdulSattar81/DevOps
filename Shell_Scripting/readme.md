@@ -71,3 +71,17 @@ Command two
 For example: cat gxdtgsyf #by doing this it will show us error, no to redirect the error message to the new device we can simply give 
 cat gxdtgsyf &> /dev/null #this command will redirect the error output to the normal device, which is kind of black hole. 
 Commands
+
+# awk command
+awk is used to filter out the requirements using curly brackets 
+#also there is a delimiter used after awk (-F " ") --> here the space between the double quotes is called as delimiter
+For example: awk -F " " '{print $1}' filemame
+
+1. awk -F ":" '{print $NF}' demofile (# NF - prints the last column of each line)
+2. awk -F '{print $NR} demofile (# NR - prints every alternate column of each line in a file)
+
+# Translate 
+
+
+
+
