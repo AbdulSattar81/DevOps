@@ -56,7 +56,7 @@ Command one
 Command two
 }
 
-#transfer the data from one file to another using cat command
+# transfer the data from one file to another using cat command
 cat < file1 >file2
 
 #
