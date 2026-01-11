@@ -81,7 +81,12 @@ For example: awk -F " " '{print $1}' filemame
 2. awk -F '{print $NR} demofile (# NR - prints every alternate column of each line in a file)
 
 # Translate 
+Translate(tr) command is used to Modify, Delete, etc.. the data 
+For example: 
+1.tr 'r' 'R' < /filename.txt
+2. cat filename | tr [:upper:] [:lower:]
+3. cat filename | tr [:lower:] [:upper:]
 
-
+# Tee 
 
 
