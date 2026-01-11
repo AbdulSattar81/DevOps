@@ -57,8 +57,8 @@ Command two
 }
 
 # transfer the data from one file to another using cat command
-cat < file1 >file2
-
+1. cat < file1 >file2
+2. cat file1 | tee file2
 # Redirect the Error to null device
 For example: cat gxdtgsyf #by doing this it will show us error, no to redirect the error message to the new device we can simply give 
 cat gxdtgsyf &> /dev/null #this command will redirect the error output to the normal device, which is kind of black hole. 
