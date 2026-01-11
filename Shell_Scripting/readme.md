@@ -8,6 +8,9 @@ version: v0.1
 To execute shell commands in shell_script: Use $(command)
 for example: echo " This is my present working directory: **$(pwd)** "
 
+#two shift the cursor to the very right of the line we use
+
+
 #Shell_scripting always starts with !#/bin/bash and the file extension will be .sh
 #multi line comment
 
@@ -57,7 +60,7 @@ Command two
 }
 
 # transfer the data from one file to another using cat command
-1. cat < file1 >file2
+1. cat < file1 >file2 #space between the commands doesn't matter.
 2. cat file1 | tee file2
 # Redirect the Error to null device
 For example: cat gxdtgsyf #by doing this it will show us error, no to redirect the error message to the new device we can simply give 
