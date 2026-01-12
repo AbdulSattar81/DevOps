@@ -87,6 +87,10 @@ For example:
 2. cat filename | tr [:upper:] [:lower:]
 3. cat filename | tr [:lower:] [:upper:]
 
-# Tee 
+# Sort
+For example: sort -nr marksheet.txt 
+(-n stands for numerical)
+( -r stands for reverse)
+
 
 
