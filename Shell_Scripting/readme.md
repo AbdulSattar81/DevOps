@@ -92,5 +92,7 @@ For example: sort -nr marksheet.txt
 (-n stands for numerical)
 ( -r stands for reverse)
 
+### sed, awk, grep, aux
+
 
 
