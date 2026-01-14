@@ -25,8 +25,8 @@ free (lists the memory of the machine)
 nproc (it will list the number of CPU's running on VM)
 top (It will list the processesand many other details of the machine)
 
-df (lists available disk space
-df -h (-h stands for Human readable
+df (lists available disk space)
+df -h (-h stands for Human readable)
 
 #we should give Set parameter at the beginning of the shell script after shebang(#!/bin/bash)
 set -x (it will print the input command  & output result on the terminal itself)

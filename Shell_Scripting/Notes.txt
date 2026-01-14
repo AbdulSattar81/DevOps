@@ -1,0 +1,7 @@
+#LEMP
+L= Linux
+E = Nginx (web server, pronounced "Engine-X)
+M = MySQL
+P = PHP
+
+#
