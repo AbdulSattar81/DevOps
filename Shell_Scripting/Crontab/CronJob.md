@@ -6,4 +6,4 @@
 
 
 # CronJob:
-* * * * * /Path/to/file.sh
+-> * * * * * /Path/to/file.sh
