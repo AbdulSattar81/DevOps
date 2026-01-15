@@ -12,6 +12,17 @@ for example: echo " This is my present working directory: **$(pwd)** "
 1. $ (dollar is used to jump to right)
 2. 0 (zero is used to jump back to the start of the line)
 
+# $ ( Arguments)
+1. In Bash, $_ is a special variable that holds the last argument of the previous command. This saves you from typing the folder name twice:
+
+To create a directory and a file inside that directory:
+
+mkdir folder_name && touch "$_"/file.txt
+
+2. $# (argument count)
+3. $? (Exit Status)
+4. $0 (The name of the file itself)
+5. $1 $2 ... (arguments1 argument2 ...)
 #To undo in VIM editor
 1. u (by pressing u it will undo)
 
