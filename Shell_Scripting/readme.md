@@ -111,5 +111,32 @@ for example:
 
 ### sed, awk, grep, aux
 
+# Function
+function_name() {
+
+}
+
+1. *local* is used inside a function to create a function-scoped variable.
+
+for example: 
+<< example
+age_verification() {
+    local name="$1"
+    local age
+
+    read -p "Please enter age for $name: " age
+
+    echo
+    echo "$name's age is $age. Let's see if you are eligible or not 🤨"
+
+if (( age >= 18 && age <= 30 )); then
+        echo "$name, congratulations! You are eligible."
+    else
+        echo "$name, sorry — you are not eligible."
+    fi
+    echo
+}
+
+example
 
 
