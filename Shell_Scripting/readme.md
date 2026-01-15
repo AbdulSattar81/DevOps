@@ -98,10 +98,16 @@ For example:
 2. cat filename | tr [:upper:] [:lower:]
 3. cat filename | tr [:lower:] [:upper:]
 
-# Sort
+# Sort & Word Count
+sort:
 For example: sort -nr marksheet.txt 
 (-n stands for numerical)
 ( -r stands for reverse)
+
+wc (word count)
+for example: 
+1. wc filename.txt 
+2. wc -l filename.txt (-l tells the command to only output the Lines.)
 
 ### sed, awk, grep, aux
 
