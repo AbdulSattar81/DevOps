@@ -11,6 +11,9 @@ for example: echo " This is my present working directory: **$(pwd)** "
 # To jump very right of the line in VIM Editor:
 1. $ (dollar is used to jump to right)
 2. 0 (zero is used to jump back to the start of the line)
+3. shift+g (or) G = jumps to the last line in the script.
+4. u = Undo whatever you wrote in the script until you start writing it again. after, returning to the script from escape mode.
+
 
 # $ ( Arguments)
 1. In Bash, $_ is a special variable that holds the last argument of the previous command. This saves you from typing the folder name twice:
