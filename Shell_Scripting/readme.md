@@ -140,6 +140,23 @@ if (( age >= 18 && age <= 30 )); then
     echo
 }
 
+### declare an associative array:
+
+declare -A error_messages
+
+declare = introduces a variable with specific attributes.
+
+-A = tells Bash that the variable is an associative array (key–value map with string keys, not just numeric indices).
+
+error_messages = is the variable name of that associative array.
+
+# IFS
+IFS is a special shell variable called the Internal Field Separator; it controls how the shell splits text into fields (typically on space, tab, and newline by default).
+
+IFS is used whenever Bash does “word splitting”, i.e., when it breaks input into separate fields.
+
+
+
 example
 
 
