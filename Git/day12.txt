@@ -6,3 +6,4 @@ let's do it again 2nd time, and now I understood about the hunk reader as well, 
 ++ new_file
 
 end_of_file
+thank_you
