@@ -1,21 +1,12 @@
-let's try the add command of git by editing the file 1st time
-
-let's do it again 2nd time, and now I understood about the hunk reader as well, everything between these @@....@@ is a hunk.
-
 -- old_file
 ++ new_file
+Everything between these @@....@@ is a hunk.
 
-end_of_file
-thank_you
-see you tomorrow
-alright then 
-do not miss the next class
-
-### Git Commands
+# Git Commands
 1. git branch
--To see branches on the remote repository (like GitHub)
+#To see branches on the remote repository (like GitHub)
 git branch -r
--To see both local and remote
+#To see both local and remote
 git branch -a
 #This command is used to delete the branch from local repository
 git branch -d branch_name
