@@ -1,5 +1,4 @@
 -- old_file  
-
 ++ new_file  
 Everything between these @@....@@ is a hunk.
 
@@ -33,4 +32,4 @@ git branch -vv
 
 
 # Git Revert & Merge
-Git 
+git revert HEAD~2
