@@ -1,6 +1,6 @@
 -- old_file  
 
-++ new_file
+++ new_file  
 Everything between these @@....@@ is a hunk.
 
 # Git Commands
