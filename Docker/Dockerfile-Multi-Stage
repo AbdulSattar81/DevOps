@@ -1,0 +1,33 @@
+#STAGE-1
+
+#base image
+FROM
+
+#set a working directory
+WORKDIR /app
+
+#copt the code from host to container
+COPY . .
+
+#run the APP
+RUN pip install -r requirements.txt 
+
+#Serve the Application
+CMD ["python3" "app.py"]
+
+#STAGE-2
+
+#base image
+FROM
+
+#set a working directory
+WORKDIR /app
+
+#copt the code from host to container
+COPY 
+
+#run the APP
+RUN pip install -r requirements.txt 
+
+#Serve the Application
+CMD ["python3" "app.py"]
