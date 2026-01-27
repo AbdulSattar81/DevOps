@@ -8,7 +8,7 @@ version: v0.1
 To execute shell commands in shell_script: Use $(command)
 for example: echo " This is my present working directory: **$(pwd)** "
 
-# To jump very right of the line in VIM Editor:
+# To jump/Move the cursor in VIM Editor:
 1. $ (dollar is used to jump to right)
 2. 0 (zero is used to jump back to the start of the line)
 3. shift+g (or) G = jumps to the last line in the script.
