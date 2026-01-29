@@ -59,12 +59,12 @@ set -o pipefail (this command is very important without this, the set -e command
 # Process Commands
 ps aux                    # List all processes.  
 ps -ef                    # Another format.  
-top                       # Real-time process viewer
-htop                      # Better top (needs installation)
-kill <PID>                # Stop a process
-kill -9 <PID>             # Force kill
-pgrep <name>              # Find PID by name
-pkill <name>              # Kill by name
+top                       # Real-time process viewer.  
+htop                      # Better top (needs installation).  
+kill <PID>                # Stop a process.  
+kill -9 <PID>             # Force kill.  
+pgrep <name>              # Find PID by name.  
+pkill <name>              # Kill by name.  
 
 
 #curl (curl command is used to transfer or retrieve data from the Internet. it does not download any file. It just displayed whatever is there in the URL)
