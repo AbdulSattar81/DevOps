@@ -56,6 +56,17 @@ set -o pipefail (this command is very important without this, the set -e command
 2. ps -ef | grep amazon (ex: in place of amazon you can type anything that you want to filter by.)
 3. ps -ef | grep amazon | awk -F" " '{print $2}'     (ex: here "$2" means second column from the data)
 
+# Process Commands
+ps aux                    # List all processes
+ps -ef                    # Another format
+top                       # Real-time process viewer
+htop                      # Better top (needs installation)
+kill <PID>                # Stop a process
+kill -9 <PID>             # Force kill
+pgrep <name>              # Find PID by name
+pkill <name>              # Kill by name
+
+
 #curl (curl command is used to transfer or retrieve data from the Internet. it does not download any file. It just displayed whatever is there in the URL)
 for example: curl www.gitHub.com/abdulsattar81/DevOps/ 
 
