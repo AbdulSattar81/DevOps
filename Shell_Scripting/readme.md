@@ -57,7 +57,7 @@ set -o pipefail (this command is very important without this, the set -e command
 3. ps -ef | grep amazon | awk -F" " '{print $2}'     (ex: here "$2" means second column from the data)
 
 # Process Commands
-ps aux                    # List all processes
+ps aux                    # List all processes. 
 ps -ef                    # Another format
 top                       # Real-time process viewer
 htop                      # Better top (needs installation)
