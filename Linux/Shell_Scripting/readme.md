@@ -125,6 +125,12 @@ for example:
 
 ### sed, awk, grep, aux
 
+# grep
+grep [OPTION...] PATTERNS [FILE...]  
+example: grep Adnan /etc/passwd
+Flags: -E  (extended regular expressions)  
+-i (ignore-case-sensitivity)  
+
 # Function
 function_name() {
 
