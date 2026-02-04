@@ -127,7 +127,7 @@ for example:
 
 # grep
 grep [OPTION...] PATTERNS [FILE...]  
-example: grep Adnan /etc/passwd
+example: grep Adnan /etc/passwd  
 Flags: -E  (extended regular expressions)  
 -i (ignore-case-sensitivity)  
 
