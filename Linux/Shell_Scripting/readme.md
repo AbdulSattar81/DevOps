@@ -8,8 +8,13 @@ version: v0.1
 To read the vim file  
 use: view file-name.sh(This will open the file in vim-editor in readonly mode)  
 To execute shell commands in shell_script: Use $(command)
-for example: echo " This is my present working directory: **$(pwd)** "
+for example: echo " This is my present working directory: **$(pwd)** "  
 
+# Understand Permissions
+Format: rwxrwxrwx (owner-group-others)  
+  
+r = read (4), w = write (2), x = execute (1)  
+  
 # To jump/Move the cursor in VIM Editor:
 1. $ (dollar is used to jump to right)
 2. 0 (zero is used to jump back to the start of the line)
