@@ -4,7 +4,9 @@ Date: 01/07/2026
 version: v0.1
 #################
 
-#To understand Linux architecture just remember these A(Apps) S(Shell) K(kernel).    To execute a shell script go to the directory where your shell script is saved first then execute with ./file_name.sh
+#To understand Linux architecture just remember these A(Apps) S(Shell) K(kernel).    To execute a shell script go to the directory where your shell script is saved first then execute with ./file_name.sh  
+To read the vim file  
+use: view file-name.sh(This will open the file in vim-editor in readonly mode)  
 To execute shell commands in shell_script: Use $(command)
 for example: echo " This is my present working directory: **$(pwd)** "
 
