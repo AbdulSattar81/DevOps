@@ -23,7 +23,7 @@ awk
 grep  
 systemctl status <service_name>  
 journalctl -u <service_name> -f  
--u = unit
+-u = unit  
 -f = streams new logs in real-time so you can watch for errors as they happen.  
 
   
