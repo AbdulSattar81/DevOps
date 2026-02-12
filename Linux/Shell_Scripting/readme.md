@@ -16,7 +16,7 @@ Format: rwxrwxrwx (owner-group-others)
 r = read (4), w = write (2), x = execute (1)  
 
 #Commands that saves time  
-ctrl+r = reverse search history (help to search the previous/recent commands used on the terminal)  
+ctrl+r = **reverse search history** (help to search the previous/recent commands used on the terminal)  
 awk  
 grep  
   
