@@ -14,6 +14,11 @@ for example: echo " This is my present working directory: **$(pwd)** "
 Format: rwxrwxrwx (owner-group-others)  
   
 r = read (4), w = write (2), x = execute (1)  
+
+#Commands that saves time  
+ctrl+r = reverse search history (help to search the previous/recent commands used on the terminal)  
+awk  
+grep  
   
 # To jump/Move the cursor in VIM Editor:
 1. $ (dollar is used to jump to right)
