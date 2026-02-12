@@ -17,8 +17,15 @@ r = read (4), w = write (2), x = execute (1)
 
 #Commands that saves time  
 ctrl+r = **reverse search history** (help to search the previous/recent commands used on the terminal)  
+sudo !! = the shell looks back at your command history, grabs the very last line you executed, and swaps the !! for that text before running it.  
+alias = we can set shortcut for long commands  
 awk  
 grep  
+systemctl status <service_name>  
+journalctl -u <service_name> -f  
+-u = unit
+-f = streams new logs in real-time so you can watch for errors as they happen.  
+
   
 # To jump/Move the cursor in VIM Editor:
 1. $ (dollar is used to jump to right)
