@@ -3,13 +3,10 @@
 
 # Steps to mount a volume/Block/disk
 1) check the newly created volume  
-2) Build a linux filesystem by using the command ( mkfs -t etx4 /dev/nvme1n1
-                                                             |
-                                               -t(type)  filesystem_type  
-  
-3) Mount /dev/nvme1n1 /mnt/data
-4) to mount the volume without login into root user, we can edit the **/etc/fstab** file and add the entries regarding the volume. the system remembers this when system gets reboot/Start.
-5)          
+2) Build a linux filesystem by using the command ( mkfs -t etx4 /dev/nvme1n1  
+3) Mount /dev/nvme1n1 /mnt/data  
+4) To mount the volume without login into root user, we can edit the **/etc/fstab** file and add the entries regarding the volume. the system remembers this when system gets reboot/Start.  
+5) 
 
 
 # Physical Volume
