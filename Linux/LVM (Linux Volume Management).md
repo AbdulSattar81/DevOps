@@ -8,6 +8,12 @@
 4) To mount the volume without login into root user, we can edit the **/etc/fstab** file and add the entries regarding the volume. the system remembers this when system gets reboot/Start.  
 5) 
 
+# Full forms 
+lvm - logical volume manager  
+pv - physical volume  
+vg - volume group  
+lv - logical volume  
+lvs- logical volumes (# to check the logical volumes details)  
 
 # Physical Volume
 pvcreate /dev/sdb
