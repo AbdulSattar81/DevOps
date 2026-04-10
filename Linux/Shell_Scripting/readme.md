@@ -33,7 +33,8 @@ journalctl -u <service_name> -f
 1. $ (dollar is used to jump to right)
 2. 0 (zero is used to jump back to the start of the line)
 3. shift+g (or) G = jumps to the last line in the script.
-4. u = Undo whatever you wrote in the script until you start writing it again. after, returning to the script from escape mode.
+4. u = Undo whatever you wrote in the script until you start writing it again. after, returning to the script from escape mode.  
+5. e = moves cursor to the next word's end letter.  
 
 
 # $ ( Arguments)
@@ -44,7 +45,7 @@ To create a directory and a file inside that directory:
 mkdir folder_name && touch "$_"/file.txt
 
 2. $# (argument count)
-3. $? (Exit Status)
+3. $? (Exit Status of the last command executed)
 4. $0 (The name of the file itself)
 5. $1 $2 ... (arguments1 argument2 ...)
 #To undo in VIM editor
