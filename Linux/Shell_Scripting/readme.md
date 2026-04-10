@@ -45,7 +45,7 @@ To create a directory and a file inside that directory:
 mkdir folder_name && touch "$_"/file.txt
 
 2. $# (argument count)
-3. $? (Exit Status of the last command executed)
+3. $? (Exit Status of the previous/last command executed)
 4. $0 (The name of the file itself)
 5. $1 $2 ... (arguments1 argument2 ...)
 #To undo in VIM editor
