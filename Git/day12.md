@@ -2,6 +2,20 @@
 ++ new_file  
 Everything between these @@....@@ is a hunk.
 
+#Aliases
+
+alias ga='git add'  
+alias gb='git branch'  
+alias gs='git status'  
+alias gsw='git switch'  
+alias gc='git commit -m'  
+alias gp='git push origin'  
+alias gpl='git pull origin'  
+alias gm='git merge'  
+alias gr='git rebase'  
+alias gff='git pull --ff-only origin'  
+
+
 # Git Commands
 1. git branch  
 <!--To see branches on the remote repository (like GitHub)  -->
