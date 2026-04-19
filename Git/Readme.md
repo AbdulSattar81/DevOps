@@ -14,7 +14,7 @@ alias gpl='git pull origin'
 alias gm='git merge'  
 alias gr='git rebase'  
 alias gff='git pull --ff-only origin'  
-
+alias gcb='git checkout -b'
 
 # Git Commands
 
@@ -44,7 +44,12 @@ alias gff='git pull --ff-only origin'
 - git commit -m " Message to display for commit"  
 <!--This -a flag is used if the file/folder is already tracked  -->
 - git commit -am "Commit Message"  
-  
+
+# Git Switch/Checkout  
+- git switch <branch_name>
+- git checkout <branch_name>
+- git checkout -b <branch_name>  (create's a new branch)  
+
 #Git Push & Git Pull
 - git push origin branch_name  
 <!--if you create a branch locally and want to push that branch to remote(GitHub), use  -->
@@ -53,5 +58,20 @@ alias gff='git pull --ff-only origin'
 
 - git pull origin <branch_name>   (eg: main, dev, feature)  
 
-# Git Revert & Merge
+# Git Revert, Reset, & Merge
 - git revert HEAD~2
+- git revert 5924609 (eg: 5924609 is commit_ID)  
+
+- git merge <branch_name>
+
+- git reset --soft 5924609 (git will delete/wipes all the commits above this commit_hash 5924609)
+- git reset --hard 5924609 (git with delete all the commits, but maintains the file)
+- git reset --mixed 5924609 (git will remove the commits above 5924609, however we can still watch and edit all those changes done in the file)
+
+   
+# Git Log
+- git log
+- git log --oneline
+- git log --oneline -n 5
+
+# Git 
