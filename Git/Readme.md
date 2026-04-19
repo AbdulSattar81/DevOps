@@ -64,9 +64,9 @@ alias gcb='git checkout -b'
 
 - git merge <branch_name>
 
-- git reset --soft 5924609 (git will delete/wipes all the commits above this commit_hash 5924609)
-- git reset --hard 5924609 (git with delete all the commits, but maintains the file)
-- git reset --mixed 5924609 (git will remove the commits above 5924609, however we can still watch and edit all those changes done in the file)
+- git reset --soft 5924609 (git will delete/wipes all the commits above this commit_hash 5924609 and keeps working tree)
+- git reset --hard 5924609 (git with delete all the commits, removes working tree)
+- git reset --mixed 5924609 (git will remove the commits_ID above 5924609, keeps working directory. However we can still watch and edit all those changes done in the file)  
 
    
 # Git Log
