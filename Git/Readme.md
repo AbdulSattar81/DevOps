@@ -18,9 +18,9 @@ alias gff='git pull --ff-only origin'
 
 # Git Commands
 
-! git branch  (To see branches on the remote repository (like GitHub)  
+- git branch  (To see branches on the remote repository (like GitHub)  
 
-git branch -r  (shows only the remote branches available on your repository, shows what branches exists on remote server{GitHub} )  
+- git branch -r  (shows only the remote branches available on your repository, shows what branches exists on remote server{GitHub} )  
 <!--To see both local and remote  -->
 
 git branch -vv  (- Shows all your local branches along with their tracking information & latest commit message  
