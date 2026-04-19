@@ -17,17 +17,16 @@ alias gff='git pull --ff-only origin'
 
 
 # Git Commands
-1. git branch  
-<!--To see branches on the remote repository (like GitHub)  -->
-git branch -r  
+1. git branch  (To see branches on the remote repository (like GitHub)  
+git branch -r  (shows only the remote branches available on your repository, shows what branches exists on remote server{GitHub} )  
 <!--To see both local and remote  -->
-git branch -a  
-<!--This command is used to delete the branch from local repository  -->
-git branch -d branch_name  
-<!--To Force delete a branch locally  -->
-git branch -D branch_name  
-<!--This command is to delete remote branch  -->
-git push origin --delete branch_name  
+git branch -a  (This list all branches in your repository both local branches and remote branches)
+
+git branch -d branch_name  (This command is used to delete the branch from local repository)
+
+git branch -D branch_name  (To Force delete a branch locally)  
+
+git push origin --delete branch_name  (This command is to delete remote branch)  
   
 2. git status  
 3. git add Git/day13.txt (To move to stagging/ to track the changes)  
