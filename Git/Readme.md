@@ -50,7 +50,7 @@ alias gcb='git checkout -b'
 - git checkout <branch_name>
 - git checkout -b <branch_name>  (create's a new branch)  
 
-#Git Push & Git Pull
+# Git Push & Git Pull
 - git push origin branch_name  
 <!--if you create a branch locally and want to push that branch to remote(GitHub), use  -->
 - git push -u origin branch_name  
