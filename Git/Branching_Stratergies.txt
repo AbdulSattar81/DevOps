@@ -3,3 +3,5 @@ There are different types of Branching Statergies
 - git flow 
 - trunk based development
 - feature branching
+-environment branching
+- patch branching
