@@ -1,0 +1,35 @@
+Codex quick demo for this workspace
+===================================
+
+What Codex can do for you
+1. Read your files and explain them.
+2. Edit code or notes for you.
+3. Fix bugs and improve scripts.
+4. Run commands and summarize results.
+5. Review your work and point out risks.
+
+Examples you can try in this folder
+1. "Explain day13.sh line by line."
+2. "Convert my Git notes into clean study notes."
+3. "Turn day13.sh into a beginner-friendly Git cheat sheet."
+4. "Review these files and tell me what is confusing or incorrect."
+5. "Add comments to this shell script so I can learn from it."
+6. "Create a practice script for Git branch, merge, and rebase."
+
+Good prompt pattern
+"Open <file>, understand it, make the change, and explain what you changed."
+
+Example
+"Open github/Git/day13.sh, clean up the wording, add better section titles, and keep it simple for a beginner."
+
+Best way to leverage Codex
+- Give a file path when possible.
+- Say whether you want explanation, edit, review, or automation.
+- Ask for beginner, intermediate, or advanced explanation.
+- Ask Codex to make the change directly if you want hands-on help.
+
+Simple starter requests
+- "Summarize github/Git/day12.txt."
+- "Improve github/Git/day13.sh."
+- "Teach me Git using the notes in github/Git."
+- "Create a small bash exercise for me in this folder."
