@@ -1,0 +1,26 @@
+In GitHub:                                                                                                              
+
+- Repository (In github we call repo)                                                                             
+- eg: github.com/AbdulSattar81/Shell_scripting.git                         
+- Here its pull requests
+
+In GitLab
+
+- Groups (in GitLab we call Groups). 
+- eg: https://gitlab.com/{groups}/{project}.  
+- Here it is Merge requests
+- 
+
+- No need of installing Jenkins if we have gitlab because gitlab does building, testing almost all things what Jenkins could do.
+
+- whenever in gitlab we want to create a cicd pipeline,
+in pipeline --> Stages --> Jobs. 
+
+# Stages:
+These are the stages to build a cicd pipeline, we also need to define stages in GitLab in .gitlab-ci.yml file.
+
+1. Build
+2. Test
+3. Push
+4. Deploy
+
