@@ -19,8 +19,20 @@ in pipeline --> Stages --> Jobs.
 # Stages:
 These are the stages to build a cicd pipeline, we also need to define stages in GitLab in .gitlab-ci.yml file.
 
-1. Build
+1. Build 
 2. Test
 3. Push
 4. Deploy
 
+
+# while coding for .gitlab-ci.yaml
+why we don't give ( - ) before the variables, check the below example, it is because we are creating object of variables not list
+we use ( - ) for creating list of things. same as how we do for docker compose for ENV's.
+
+Stages:
+  - build
+  - test
+
+variables:
+    Deploy_env: "production"
+    gitlab_user_key: "this-is-my-key"
