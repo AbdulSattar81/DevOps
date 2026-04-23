@@ -36,3 +36,18 @@ Stages:
 variables:
     Deploy_env: "production"
     gitlab_user_key: "this-is-my-key"
+
+# Runners vs Jenkins
+
+Runner(GitLab) = Agent(Jenkins)
+Runner tag = Agent Label
+Executor: we can execute jobs on runners (we can run different jobs on different runners)
+
+while registering a runner, it will ask for 3 things
+1. Enter the GitLab instance URL (for example, https://gitlab.com/):
+[https://gitlab.com]: 
+
+2. Enter a name for the runner. This is stored only in the local config.toml file:
+[ubuntu]: runner-adnan
+
+3. Enter an executor: shell, custom, docker, docker-windows, kubernetes, virtualbox, instance, docker-autoscaler, docker+machine, ssh, parallels: shell
