@@ -1,4 +1,4 @@
-**In docker images:
+**In docker images:**
 The <untagged> images are called:
 🧩 Dangling images
 
@@ -6,7 +6,7 @@ to clean them (safe way):
 ```bash
 docker image prune
 ```
-** Docker Containers
+**Docker Containers**
 ```bash
 docker ps
 ```
