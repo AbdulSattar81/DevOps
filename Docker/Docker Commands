@@ -6,3 +6,12 @@
 #docker build 
 #docker rm <contianer_name>
 #docker rmi <image_name>
+
+#creating a network in docker
+docker network create 
+
+#create or attach a volume
+use "-v" flag to attach a volume
+          OR
+create a volume: docker volume create [volume_name]
+docker volume create bankapp
