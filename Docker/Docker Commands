@@ -13,5 +13,5 @@ docker network create
 #create or attach a volume
 use "-v" flag to attach a volume
           OR
-create a volume: docker volume create [volume_name]
+create a volume: docker volume create <volume_name>
 docker volume create bankapp
