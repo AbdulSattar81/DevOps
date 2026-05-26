@@ -6,7 +6,7 @@ to clean them (safe way):
 ```bash
 docker image prune
 ```
-##Docker Networks
+**Docker Networks** \
 There are 7 types of Docker Networks, out of which 4 are considered main.
 1. Bridge Network
 2. User-defined bridge network
