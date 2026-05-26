@@ -1,33 +1,33 @@
-#STAGE-1
+#STAGE-1 (Large image - 1.22GB)
 
 #base image
-FROM
+FROM node:18 (big image)
 
 #set a working directory
 WORKDIR /app
 
 #copt the code from host to container
-COPY . .
+COPY package*.json ./
 
 #run the APP
-RUN pip install -r requirements.txt 
+RUN npm install
 
 #Serve the Application
-CMD ["python3" "app.py"]
+CMD ["npm", "run","dev"]
 
-#STAGE-2
+#STAGE-2 (small image -230MB)
 
 #base image
-FROM
+FROM node:alpine(small image)
 
 #set a working directory
 WORKDIR /app
 
 #copt the code from host to container
-COPY 
+COPY --from=Builder /app .
 
-#run the APP
-RUN pip install -r requirements.txt 
+#expose the port
+EXPOSE 5173
 
 #Serve the Application
-CMD ["python3" "app.py"]
+CMD ["npm","run","dev"]
