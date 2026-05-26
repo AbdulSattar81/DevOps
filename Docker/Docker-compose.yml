@@ -27,5 +27,9 @@ service:
     - "80:80"
     networks:
     - my-net
+
+#like how we have defined services above with containers, likewise, we have to define/mention the networks we are going to use here.
+  networks:
+    my-net:
   
 #if you want to run more containers in the same docker-compose.yml file, you can continue to add more containers below
