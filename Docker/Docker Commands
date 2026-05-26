@@ -15,3 +15,8 @@ use "-v" flag to attach a volume
           OR
 create a volume: docker volume create <volume_name>
 docker volume create bankapp
+
+#docker-compose. 
+docker compose up
+docker compose down
+
