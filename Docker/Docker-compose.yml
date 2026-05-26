@@ -1,0 +1,31 @@
+#docker compose file is written in key and value pair
+#we use key and value because we are configuring something. In Doker, we are configuring service services.
+#services = containers
+
+#To **Start** docker-compose.yML file we do <docker compose up>
+#To **Stop** we use <docker compose down>
+
+service:
+  #give a key value for creating a container.
+  online_shop: #container1
+    #the container is build on image and the image is built using Dockerfile
+    Build: #to build we have to give context
+      Context: . #context = docker build -t <image_name> <file_path>
+
+  container_name: online_shop
+  Ports:
+  - "5173:5173"
+  networks:
+  - my-net
+
+#at the same time if I want to create more containers
+
+  NGINX: #container2
+    image: nginx:latest
+    container_name: NGINX
+    ports:
+    - "80:80"
+    networks:
+    - my-net
+  
+#if you want to run more containers in the same docker-compose.yml file, you can continue to add more containers below
