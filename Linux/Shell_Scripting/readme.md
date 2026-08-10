@@ -33,8 +33,9 @@ journalctl -u <service_name> -f
 1. $ (dollar is used to jump to right)
 2. 0 (zero is used to jump back to the start of the line)
 3. shift+g (or) G = jumps to the last line in the script.
-4. u = Undo whatever you wrote in the script until you start writing it again. after, returning to the script from escape mode.  
-5. e = moves cursor to the next word's end letter.  
+4. gg = Jumps to the first line
+5. u = Undo whatever you wrote in the script until you start writing it again. after, returning to the script from escape mode.  
+6. e = moves cursor to the next word's end letter.  
 
 
 # $ ( Arguments)
