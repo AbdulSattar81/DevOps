@@ -1,0 +1,11 @@
+kind: Deployment
+apiVersion: v1
+
+metadata:
+  name:
+  namespace:
+
+spec: 
+
+
+

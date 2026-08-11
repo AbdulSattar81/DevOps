@@ -1,0 +1,9 @@
+kind: ConfigMap
+apiVersion: v1
+
+metadata:
+  name: bankapp-config-map
+  namespace: bankapp
+
+data:
+  MYSQL_DATABASE: bankappdb
