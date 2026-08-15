@@ -4,15 +4,38 @@ Date: 01/07/2026
 version: v0.1
 #################
 
-#To understand Linux architecture just remember these A(Apps) S(Shell) K(kernel).    To execute a shell script go to the directory where your shell script is saved first then execute with ./file_name.sh
+#To understand Linux architecture just remember these A(Apps) S(Shell) K(kernel).    To execute a shell script go to the directory where your shell script is saved first then execute with ./file_name.sh  
+To read the vim file  
+use: view file-name.sh(This will open the file in vim-editor in readonly mode)  
 To execute shell commands in shell_script: Use $(command)
-for example: echo " This is my present working directory: **$(pwd)** "
+for example: echo " This is my present working directory: **$(pwd)** "  
 
-# To jump very right of the line in VIM Editor:
+# Understand Permissions
+Format: rwxrwxrwx (owner-group-others)  
+  
+r = read (4), w = write (2), x = execute (1)  
+
+#Commands that saves time  
+ctrl+r = **reverse search history** (help to search the previous/recent commands used on the terminal)  
+sudo !! = the shell looks back at your command history, grabs the very last line you executed, and swaps the !! for that text before running it.  
+alias -->  we can set shortcut for long commands   
+example: alias_name ='rm -i'  
+         unalias alias_name --> we can remove already set alias  
+awk  
+grep  
+systemctl status <service_name>  
+journalctl -u <service_name> -f  
+-u = unit  
+-f = streams new logs in real-time so you can watch for errors as they happen.  
+
+  
+# To jump/Move the cursor in VIM Editor:
 1. $ (dollar is used to jump to right)
 2. 0 (zero is used to jump back to the start of the line)
 3. shift+g (or) G = jumps to the last line in the script.
-4. u = Undo whatever you wrote in the script until you start writing it again. after, returning to the script from escape mode.
+4. gg = Jumps to the first line
+5. u = Undo whatever you wrote in the script until you start writing it again. after, returning to the script from escape mode.  
+6. e = moves cursor to the next word's end letter.  
 
 
 # $ ( Arguments)
@@ -23,7 +46,7 @@ To create a directory and a file inside that directory:
 mkdir folder_name && touch "$_"/file.txt
 
 2. $# (argument count)
-3. $? (Exit Status)
+3. $? (Exit Status of the previous/last command executed)
 4. $0 (The name of the file itself)
 5. $1 $2 ... (arguments1 argument2 ...)
 #To undo in VIM editor
@@ -55,6 +78,17 @@ set -o pipefail (this command is very important without this, the set -e command
 1. ps -ef (-ef give all the processess running)
 2. ps -ef | grep amazon (ex: in place of amazon you can type anything that you want to filter by.)
 3. ps -ef | grep amazon | awk -F" " '{print $2}'     (ex: here "$2" means second column from the data)
+
+# Process Commands
+ps aux                    # List all processes.  
+ps -ef                    # Another format.  
+top                       # Real-time process viewer.  
+htop                      # Better top (needs installation).  
+kill <PID>                # Stop a process.  
+kill -9 <PID>             # Force kill.  
+pgrep <name>              # Find PID by name.  
+pkill <name>              # Kill by name.  
+
 
 #curl (curl command is used to transfer or retrieve data from the Internet. it does not download any file. It just displayed whatever is there in the URL)
 for example: curl www.gitHub.com/abdulsattar81/DevOps/ 
@@ -113,6 +147,14 @@ for example:
 2. wc -l filename.txt (-l tells the command to only output the Lines.)
 
 ### sed, awk, grep, aux
+
+# grep
+grep [OPTION...] PATTERNS [FILE...]  
+example: grep -Ei 'Adnan|Sattar|Mohammed' /etc/passwd  
+for mutliple items  
+Flags:  
+-E  (extended regular expressions)  
+-i (ignore-case-sensitivity)  
 
 # Function
 function_name() {

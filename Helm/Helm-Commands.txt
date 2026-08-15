@@ -1,0 +1,111 @@
+================================================================
+HELM - MOST USED / DAILY COMMANDS
+================================================================
+Format -> command   -   what that command does
+Note   -> <> means replace it with your own value
+================================================================
+
+
+### 1. BASIC COMMANDS
+----------------------------------------------------------------
+helm version                                 - Shows the Helm version installed on your machine
+helm help                                    - Lists every Helm command with a short description
+helm env                                     - Shows Helm environment paths like config, cache and data
+
+### 2. REPO COMMANDS   (repo = the place where charts are stored)
+----------------------------------------------------------------
+helm repo list                               - Lists all the chart repos added on your machine
+helm repo add <name> <url>                   - Adds a new chart repo and gives it a short name
+Example: helm repo add prometheus https://prometheus-community.github.io/helm-charts
+helm repo update                             - Pulls the latest chart information from all added repos
+helm repo remove <name>                      - Removes an already added repo from your machine
+helm repo index <folder>                     - Creates an index.yaml file to build your own chart repo
+helm search repo <keyword>                   - Searches a chart inside the repos you have added
+helm search repo <keyword> --versions        - Shows all the available versions of that chart
+helm search hub <keyword>                    - Searches charts publicly available on Artifact Hub
+
+### 3. INSTALL A RELEASE   (release = one installed copy of a chart)
+----------------------------------------------------------------
+helm install <release> <chart>               - Installs a chart into the cluster with that release name
+Example: helm install my-nginx bitnami/nginx
+helm install <release> <chart> -n <namespace>              - Installs the release into a specific namespace
+helm install <release> <chart> -n <ns> --create-namespace  - Creates the namespace first and then installs
+helm install <release> <chart> -f values.yaml              - Installs using your own custom values file
+helm install <release> <chart> --set key=value             - Overrides a single value from the terminal
+helm install <release> <chart> --version 1.2.3             - Installs one specific version of the chart
+helm install <release> <chart> --dry-run --debug           - Trial run, prints the YAML but installs nothing
+helm install <release> <chart> --wait --timeout 5m         - Waits till all the pods are ready before finishing
+helm install <release> <chart> --atomic                    - If the install fails it rolls everything back
+helm install <release> ./mychart             - Installs a chart from a local folder
+
+### 4. UPGRADE AND ROLLBACK
+----------------------------------------------------------------
+helm upgrade <release> <chart>               - Applies changes to an already installed release
+helm upgrade <release> <chart> -f values.yaml              - Upgrades the release with a new values file
+helm upgrade <release> <chart> --set image.tag=v2          - Upgrades only one value, here the image tag
+helm upgrade --install <release> <chart>                   - Installs if not there, upgrades if already there (CI/CD)
+helm upgrade <release> <chart> --atomic --timeout 5m       - Rolls back automatically if the upgrade fails
+helm upgrade <release> <chart> --reuse-values              - Keeps old values and changes only what you pass now
+helm history <release>                       - Shows all the revisions of a release with their status
+helm rollback <release>                      - Goes back to the previous revision of the release
+helm rollback <release> 3                    - Goes back to revision number 3 of the release
+
+### 5. LIST AND CHECK THE RELEASES
+----------------------------------------------------------------
+helm list                                    - Lists the releases installed in the current namespace
+helm list -n <namespace>                     - Lists the releases of a particular namespace
+helm list -A                                 - Lists the releases from all the namespaces
+helm list --all                              - Lists everything including failed and pending releases
+helm status <release>                        - Shows the current status, notes and resources of a release
+helm get values <release>                    - Shows the values that were used for that release
+helm get values <release> --all              - Shows your values plus all the chart default values
+helm get manifest <release>                  - Shows the final Kubernetes YAML that Helm applied
+helm get notes <release>                     - Shows the NOTES.txt message printed after the install
+helm get all <release>                       - Shows everything about that release in one output
+
+### 6. UNINSTALL
+----------------------------------------------------------------
+helm uninstall <release>                     - Deletes the release and all the resources it created
+helm uninstall <release> -n <namespace>      - Deletes the release from a specific namespace
+helm uninstall <release> --keep-history      - Deletes the release but keeps history so you can rollback
+
+### 7. LOOK INSIDE A CHART BEFORE INSTALLING
+----------------------------------------------------------------
+helm show chart <chart>                      - Shows the chart name, version and basic details
+helm show values <chart>                     - Shows all the default values you are allowed to override
+helm show readme <chart>                     - Shows the README file of that chart
+helm show all <chart>                        - Shows chart details, values and readme together
+helm pull <chart>                            - Downloads the chart as a .tgz file into your folder
+helm pull <chart> --untar                    - Downloads and extracts the chart into a folder
+
+### 8. TEMPLATE AND DEBUG
+----------------------------------------------------------------
+helm template <release> <chart>              - Renders the chart into plain Kubernetes YAML on the screen
+helm template <release> <chart> -f values.yaml             - Renders the YAML using your custom values file
+helm lint ./mychart                          - Checks your chart for mistakes and bad formatting
+helm install <release> <chart> --dry-run --debug           - Shows the rendered YAML and the values being used
+helm diff upgrade <release> <chart>          - Shows what will change before you upgrade (helm-diff plugin)
+
+### 9. CREATE YOUR OWN CHART
+----------------------------------------------------------------
+helm create <chart-name>                     - Creates a new chart folder with the standard structure
+helm package ./mychart                       - Packages your chart folder into a .tgz file
+helm dependency list ./mychart               - Lists the sub-charts your chart depends on
+helm dependency update ./mychart             - Downloads or updates those dependency charts
+helm dependency build ./mychart              - Rebuilds the charts folder from the Chart.lock file
+
+### 10. PLUGINS
+----------------------------------------------------------------
+helm plugin list                             - Lists the plugins installed in Helm
+helm plugin install <url>                    - Installs a plugin, example the helm-diff plugin
+helm plugin uninstall <name>                 - Removes an installed plugin
+
+================================================================
+QUICK TIPS
+================================================================
+1. Always run "helm repo update" before installing, so you get the latest chart.
+2. Use "--dry-run --debug" first, it shows the YAML without touching the cluster.
+3. Use "helm upgrade --install" in pipelines, it works for both first time and later runs.
+4. Use "--atomic" in production, so a failed release does not stay half deployed.
+5. "helm get values <release>" is the fastest way to see what a running release is using.
+================================================================

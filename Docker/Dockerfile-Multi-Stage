@@ -1,0 +1,33 @@
+#STAGE-1 (Large image - 1.22GB)
+
+#base image
+FROM node:18 (big image)
+
+#set a working directory
+WORKDIR /app
+
+#copt the code from host to container
+COPY package*.json ./
+
+#run the APP
+RUN npm install
+
+#Serve the Application
+CMD ["npm", "run","dev"]
+
+#STAGE-2 (small image -230MB)
+
+#base image
+FROM node:alpine(small image)
+
+#set a working directory
+WORKDIR /app
+
+#copt the code from host to container
+COPY --from=Builder /app .
+
+#expose the port
+EXPOSE 5173
+
+#Serve the Application
+CMD ["npm","run","dev"]
