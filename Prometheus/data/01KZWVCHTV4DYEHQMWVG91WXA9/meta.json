@@ -1,0 +1,18 @@
+{
+	"ulid": "01KZWVCHTV4DYEHQMWVG91WXA9",
+	"minTime": 1786588150436,
+	"maxTime": 1786593600000,
+	"stats": {
+		"numSamples": 91786,
+		"numFloatSamples": 91786,
+		"numSeries": 509,
+		"numChunks": 1485
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01KZWVCHTV4DYEHQMWVG91WXA9"
+		]
+	},
+	"version": 1
+}
