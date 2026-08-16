@@ -1,22 +1,44 @@
-#Commands:
+#Docker Commands
 
-#docker images
-#docker ps 
-#docker run 
-#docker build 
-#docker rm <contianer_name>
-#docker rmi <image_name>
+#images
+docker images                     -> list all images present locally
+docker pull <image_name>          -> pull an image from docker hub
+docker rmi <image_name>           -> remove an image
+docker build -t <name>:<tag> .    -> build an image from the Dockerfile in current dir
 
-#creating a network in docker
-docker network create 
+#containers
+docker ps                         -> running containers only
+docker ps -a                      -> all containers, including exited ones
+docker run <image_name>           -> create and start a container
+docker run -d <image_name>        -> run in background (detached)
+docker run -it <image_name> /bin/bash   -> run and get inside the container
+docker run -p 8080:80 <image_name>      -> map host port 8080 to container port 80
+docker stop <container_name>      -> stop a running container
+docker start <container_name>     -> start a stopped container
+docker rm <container_name>        -> remove a container (stop it first)
+docker logs <container_name>      -> check container logs, useful when it keeps crashing
+docker exec -it <container_name> /bin/bash   -> get a shell inside a running container
 
-#create or attach a volume
+#network
+docker network create <network_name>    -> create a network
+docker network ls                       -> list networks
+docker run --network=<network_name> <image_name>   -> attach container to a network
+
+#volumes
 use "-v" flag to attach a volume
-          OR
-create a volume: docker volume create <volume_name>
+docker run -v <volume_name>:/path/in/container <image_name>
+
+OR create the volume first:
+docker volume create <volume_name>
 docker volume create bankapp
+docker volume ls                  -> list volumes
+docker volume rm <volume_name>    -> remove a volume
 
-#docker-compose. 
-docker compose up -d
-docker compose down
+#docker-compose
+docker compose up -d              -> start all services in background
+docker compose down               -> stop and remove containers, networks
+docker compose logs               -> logs of all services
+docker compose ps                 -> status of the services
 
+#cleanup
+docker system prune -a            -> removes unused images, containers, networks
