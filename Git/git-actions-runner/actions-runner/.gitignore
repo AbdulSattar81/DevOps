@@ -1,0 +1,10 @@
+_work/
+_diag/
+*.tar.gz
+bin/
+externals/
+.credentials
+.credentials_rsaparams
+.env
+.path
+.runner
