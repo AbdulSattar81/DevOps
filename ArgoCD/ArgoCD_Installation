@@ -35,3 +35,7 @@ command: kubectl -n argocd get secret argocd-initial-admin-secret \
 
 Login and Update password. Enjoy using ArgoCD
 
+When done with the argocd work/tasks, kill the process to forcefully stop/end the process using the following command
+command: kill -9 $(lsof -t -i:8081)
+note: use the exact port number to kill the process accordingly in the above command.
+
