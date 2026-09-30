@@ -1,7 +1,9 @@
-Create an EC2 instance
-allocate 20GB
-connect with SSH on macbook Terminal
-Setup & Installation
+ArgoCD on Local/AWS:
+
+- Create an EC2 instance, allocate 20GB
+- connect with SSH on macbook Terminal
+
+** Setup & Installation **
 
 pre-requisites: 
 1.Docker(it needs permission to run/access) which I have already done
@@ -10,8 +12,26 @@ pre-requisites:
 4.Helm (you can install ArgoCD using Helm or cube kubectl)
 ⭐️Helm is used in Production(recommended)
 
-create KIND-Config file(vim KIND-Config.yaml)- this is a manifest file
-(This create's a kind cluster)
+create KIND-Config file(vim KIND-Config.yaml)- this is a manifest file (This create's a kind cluster)
 
-Installation of ArgoCD
+*** Installation of ArgoCD ***
+
+1) kubectl create namespace argocd
+2) kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+refer this documentation: https://argo-cd.readthedocs.io/en/stable/getting_started/
+
+To Set the argocd as default namespace use the following command
+-kubectl config set-context --current --namespace=argocd
+
+- Run argocd on kubernetes cluster, by creating a namespace with the name argocd.
+command: kubectl create namespace argocd
+
+- Then, port forwarding it to a free port 8080 or 8081 or any other as you like.
+command: kubectl port-forward svc/argocd-server -n argocd 8081:443
+
+- To login first time using the password which would be saved in the kubernetes sercrets, it will be encrypted(Opaque). use the following command to get the password
+command: kubectl -n argocd get secret argocd-initial-admin-secret \
+          -o jsonpath="{.data.password}" | base64 -d; echo
+
+Login and Update password. Enjoy using ArgoCD
 
