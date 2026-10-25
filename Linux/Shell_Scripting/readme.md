@@ -21,6 +21,7 @@ sudo !! = the shell looks back at your command history, grabs the very last line
 alias -->  we can set shortcut for long commands   
 example: alias_name ='rm -i'  
          unalias alias_name --> we can remove already set alias  
+
 awk  
 grep  
 systemctl status <service_name>  
@@ -35,7 +36,8 @@ journalctl -u <service_name> -f
 3. shift+g (or) G = jumps to the last line in the script.
 4. gg = Jumps to the first line
 5. u = Undo whatever you wrote in the script until you start writing it again. after, returning to the script from escape mode.  
-6. e = moves cursor to the next word's end letter.  
+6. e = moves cursor to the next word's end letter.
+7. cmd+/ = to comment out a block of code.  
 
 
 # $ ( Arguments)
