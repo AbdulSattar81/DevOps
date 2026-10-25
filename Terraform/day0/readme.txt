@@ -25,4 +25,13 @@ version = ">= 6.0"    # 6.0 or anything newer, including 7, 8...
 version = ">= 6.0, < 7.0"   # same meaning as ~> 6.0, just written out
 
 
+#Automatic Spacing format 
+Terraform format's the spacing for you. Run this in the folder: 
+
+example: terraform fmt (or) terraform fmt -recursive
+It fixes spacing automatically, for example adding a space in terraform { and lining up the = signs. This is why so much Terraform code you see online looks neatly aligned; people rarely do it by hand.
+
+
+
+
 
