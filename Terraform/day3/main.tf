@@ -5,11 +5,11 @@ terraform {
       version = "~> 6.0"
     }
   }
-}  
+}
 
 #Configured the AWS provider
 provider "aws" {
-    region = "us-east-2"
+  region = "us-east-2"
 }
 
 #Create s3 bucket
