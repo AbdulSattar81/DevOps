@@ -1,7 +1,14 @@
 Command to check which ports are listening: ```ss -tulnp```\
 To filter further use: ```ss -tulnp | grep "port_number" ```
 
+ss	Socket Statistics (network connections)\
+-t	Show TCP connections\
+-u	Show UDP connections\
+-l	Show listening sockets\
+-n	Show numeric IP addresses and ports\
+-p	Show process names and PIDs\
 
+--- 
 ServicePorts:
 HTTP:	80 \
 HTTPS:	443 \
