@@ -1,5 +1,8 @@
-<< ServicePorts
+Command to check which ports are listening: ```ss -tulnp```\
+To filter further use: ```ss -tulnp | grep "port_number" ```
 
+
+ServicePorts:
 HTTP:	80 \
 HTTPS:	443 \
 SSH:	22 \
@@ -20,5 +23,3 @@ Jenkins: 8080 \
 SMTP:	25 \
 SonarQube:	9000 \
 Nexus:	8081 
-
-ServicePorts
