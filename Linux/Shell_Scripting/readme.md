@@ -11,6 +11,8 @@ To execute shell commands in shell_script: Use $(command)
 for example: echo " This is my present working directory: **$(pwd)** "  
 
 # Understand Permissions
+<img width="379" height="347" alt="Screenshot 2026-11-13 at 1 39 30 PM" src="https://github.com/user-attachments/assets/3787bdc7-3f0b-46c3-8ea4-6c29ccdf31e4" />
+
 Format: rwxrwxrwx (owner-group-others)  
   
 r = read (4), w = write (2), x = execute (1)  
